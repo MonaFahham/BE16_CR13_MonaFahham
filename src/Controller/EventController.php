@@ -7,11 +7,12 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Entity\Events;
-Use App\Form\EventsType;
+Use App\Form\EventsType; 
 
 class EventController extends AbstractController
-{
+{ 
     #[Route('/', name: 'app_event')]
+    
     public function index(ManagerRegistry $doctrine): Response //ManagerRegistry: class //$doctrine: variable
     {
         $events = $doctrine->getRepository(Events::class)->findAll();
