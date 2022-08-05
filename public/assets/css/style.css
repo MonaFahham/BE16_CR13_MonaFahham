@@ -1,0 +1,19 @@
+* {
+    max-width: 100%;
+}
+
+.hero {
+    /* background-image: url("pictures/music.jpg"); */
+    width: 100%;
+    height: 30rem;
+    max-width: 100%;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 2rem 3rem 5rem 3rem;
+    /* color: #aca8ac; */
+}
+
+.event_image {
+    background-size: contain;
+}

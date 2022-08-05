@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+        {% include "components/hero.html.twig" %}
+
+{% for message in app.flashes('success') %}
+   <div class="alert alert-success">
+    {{ message }}
+   </div>
+{% endfor %}
+{# {% include "components/hero.html.twig" %} #}
+{# <div class="example-wrapper"> #}
+
+<h1 class="mb-5 text-center index-headline">Events in Vienna</h1>
+<h3 class="mb-5 text-center index-headline">Search over 10000 Events in Vienna</h3>
+
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 justify-content-center m-auto mb-5 gap-5">
+        {% for event in events %}
+<div class="card" style="width: 22rem;">
+  <img src="{{asset('assets/pictures/'~ event.picture)}}" class="card-img-top d-xl-block d-lg-block d-md-block event_image" alt="Event">
+
+  <div class="card-body">
+    <h5 class="card-title">{{ event.name }}</h5>
+    <p class="card-text">{{event.date|date('F j, Y, g:i a')}}</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">{{ event.capacity }}</li>
+    <li class="list-group-item">{{ event.email }}</li>
+  </ul>
+ <div class="d-flex justify-content-around p-3 border-0">
+     <a href="/details/{{ event.id }}"><button class="btn btn-info details">Details</button></a>
+     <a href="/edit/{{ event.id }}"><button class="btn btn-warning edit">Edit</button></a>
+     <a href="/delete/{{ event.id }}"><button class="btn btn-danger delete">Delete</button></a>
+  </div> 
+</div>
+        {% endfor %} 
+    </div>
+{% endblock %}
+
+
