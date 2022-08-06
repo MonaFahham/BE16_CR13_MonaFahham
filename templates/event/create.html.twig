@@ -1,11 +1,17 @@
 {% extends 'base.html.twig' %}
-
 {% block body %}
 
-<h2 class="page-header">Add Todo</h2>
 
-{{form_start(form)}} {# the begining of the form #}
-{{form_widget(form)}} {# the input #}
-{{form_end(form)}} {# the end of the form #}
+<div class="container">
+    <h2 class="add_event">Add New Event</h2>
+    <img class="img-fluid rounded mx-auto d-block" src="{{asset('assets/pictures/addevent3.jpg')}}">
+</div>
 
+{# <div class="row col-12"> #}
+        <div class="add_form">
+            {{form_start(form)}} {# the begining of the form #}
+            {{form_widget(form)}} {# the input #}
+            {{form_end(form)}} {# the end of the form #}
+        </div>
+{# </div> #}
 {% endblock %}

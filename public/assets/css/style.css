@@ -2,18 +2,96 @@
     max-width: 100%;
 }
 
+h1 {
+    color: #be894a;
+    font-size: 5vw;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    color: #4a6575;
+    padding-bottom: 5rem;
+}
+
 .hero {
-    /* background-image: url("pictures/music.jpg"); */
     width: 100%;
     height: 30rem;
     max-width: 100%;
     z-index: 1;
     background-repeat: no-repeat;
-    background-size: 100%;
+    /* background-size: 100%; */
     padding: 2rem 3rem 5rem 3rem;
-    /* color: #aca8ac; */
 }
 
 .event_image {
-    background-size: contain;
+    max-width: 100%;
+    max-height: 100%;
+    /* border-radius: 10px; */
+    -webkit-box-shadow: 0.1rem 0.1rem 0.8rem #0f2c3e;
+    box-shadow: 0.1rem 0.1rem 0.8rem #2f3d46;
+    padding: 0px;
+    margin: 0px;
+    object-fit: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.detail_title {
+    font-size: 2rem;
+    color: #be894a;
+}
+
+.detail_img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    -webkit-box-shadow: 0.1rem 0.1rem 0.8rem #0f2c3e;
+    box-shadow: 0.1rem 0.1rem 0.8rem #2f3d46;
+    padding: auto;
+    margin: auto;
+    object-fit: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.detail_info {
+    padding-left: 10rem;
+}
+
+.detail_button {
+    margin-left: 12rem;
+}
+
+.add_event {
+    font-size: 3rem;
+    color: #be894a;
+    text-align: center;
+    /* margin-left: 5rem; */
+}
+
+.add_form {
+    font-size: 1rem;
+    /* text-align: center; */
+    margin-left: 10rem;
+}
+
+.filter_btn {
+    /* text-align: center; */
+    /* margin-bottom: 2rem; */
+    margin-left: 20rem;
+}
+
+.filter_text {
+    color: #be894a;
+    font-size: 1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.mona {
+    padding-left: 0%;
+    padding-right: 0%;
 }

@@ -1,8 +1,8 @@
 <!-- <div class="container"> -->
-<nav class="navbar navbar-expand-lg navbar-light" style="padding-inline:4rem;">
+<nav class="navbar navbar-expand-lg bg-dark text-light" style="padding-inline:4rem;">
       <div class="container-fluid">
           <a class="navbar-brand" href="home.php">
-          <img src="assets/pictures/logo1.png" alt="" width="230" height="130" class="d-inline-block align-text-top">
+          <img src="{{asset('assets/pictures/logo_main.png')}}" alt="" width="230" height="130" class="d-inline-block align-text-top">
           </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -10,20 +10,20 @@
         <div class=" collapse navbar-collapse " id="navbarNav">
           <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="/">Home</a>
+          <a class="nav-link text-light" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/create">Create Event</a>
+          <a class="nav-link text-light" href="/create">Create Event</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Event Type
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="/filter/music">Music</a></li>
-            <li><a class="dropdown-item" href="/filter/sport">Sport</a></li>
-            <li><a class="dropdown-item" href="/filter/movie">Movie</a></li>
-            <li><a class="dropdown-item" href="/filter/theater">Theater</a></li>
+          <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item text-light" href="/filter/music">Music</a></li>
+            <li><a class="dropdown-item text-light" href="/filter/sport">Sport</a></li>
+            <li><a class="dropdown-item text-light" href="/filter/movie">Movie</a></li>
+            <li><a class="dropdown-item text-light" href="/filter/theater">Theater</a></li>
           </ul>
         </li>
       </ul>

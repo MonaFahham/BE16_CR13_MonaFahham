@@ -1,4 +1,15 @@
 {% extends 'base.html.twig' %}
+
 {% block body %}
-Edit
+  <div class="details-container">
+    {# <img class="icon-details" src="{{asset('assets/pictures/addevent1.jpg')}}"> #}
+    <h1 class="add_event">Update Event</h1>
+
+    
+</div>
+        <div class="add_form">
+            {{form_start(form)}} {# the begining of the form #}
+            {{form_widget(form)}} {# the input #}
+            {{form_end(form)}} {# the end of the form #}
+        </div>
 {% endblock %}

@@ -32,7 +32,7 @@ class Events
     #[ORM\Column]
     private ?int $capacity = null;
 
-    #[ORM\Column(length: 255, unique:true)]
+    #[ORM\Column(length: 255, unique: true)]
     private ?string $email = null;
 
     #[ORM\Column]

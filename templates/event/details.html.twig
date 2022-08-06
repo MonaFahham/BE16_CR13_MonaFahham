@@ -1,4 +1,35 @@
 {% extends 'base.html.twig' %}
+
 {% block body %}
-Details
+    <div class="card mb-5 mt-5 py-4 px-4" style="max-width: 100%;">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="{{asset('assets/pictures/'~ events.picture)}}" class="detail_img mt-5 mx-3" alt="...">
+              </div>
+              <div class="col-md-8 ">
+                <div class="card-body">
+                  <h5 class="card-title detail_title detail_info">{{events.name}}</h5>
+                  <p class="card-text detail_info"><b>Date: </b>{{events.date|date('F j, Y, g:i a')}}</p>
+                  <p class="card-text detail_info"><b>Start Time: </b>{{events.startTime|date('F j, Y, g:i a')}}</p>
+                  <p class="card-text detail_info"><b>Email Address: </b>{{events.email}}</p>
+                  <p class="card-text detail_info"><b>Number of People: </b>{{events.capacity}}</p>
+                  <p class="card-text detail_info"><b>Phone Number: </b>{{events.phoneNumber}}</p>
+                  <p class="card-text detail_info"><b>City: </b>{{events.city}}</p>
+                  <p class="card-text detail_info"><b>Street Name: </b>{{events.streetName}}</p>
+                  <p class="card-text detail_info"><b>House Number: </b>{{events.houseNumber}}</p>
+                  <p class="card-text detail_info"><b>Zip Code: </b>{{events.zipCode}}</p>
+                  <p class="card-text detail_info"><b>Event Website: </b>{{events.eventUrl}}</p>
+                  <p class="card-text detail_info"><b>Event Type: </b>{{events.eventType}}</p>
+                  <p class="card-text detail_info"><b>Description: </b>{{events.description}}</p>
+                </div>
+                
+                <div class="col-12">
+                   <a href="/edit/{{ events.id }}"><button class="button btn btn-outline-warning detail_button" type="button">Edit</button></a>
+                    <a href="/"><button class="button button2 btn btn-outline-secondary" type="button">Home</button></a>
+                   <a href="/delete/{{ events.id }}"><button class="button button2 btn btn-outline-danger " type="button">Delete</button></a>
+                </div>
+            </div>
+              </div>
+            </div>
+        </div>
 {% endblock %}
